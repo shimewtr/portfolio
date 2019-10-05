@@ -1,22 +1,84 @@
 @import 'compass';
+@import 'compass/reset';
+
 @import 'color';
-@import 'header';
-@import 'footer';
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
-@import url("https://fonts.googleapis.com/css?family=Lobster");
-@import url("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import 'mixin';
+@import 'size';
 
 * {
-  color: $standard_text;
-  font-family: 'Lato', 'Noto Sans Japanese';
+  color: $text_main;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 html {
-  height: 100%;
+  font-size: $fontsize_html
 }
 
 body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   height: 100%;
-  background-color: $body_color;
+  background-color: $background_body;
+}
+
+.main {
+  display: flex;
+  margin-top: 120px;
+  width: $width_main;
+}
+
+.profile {
+  @include container;
+}
+
+.icon {
+  @include container;
+
+  &__image {
+    width: $width_icon_image;
+    height: $width_icon_image;
+    border-radius: $width_icon_image / 2;
+    box-shadow: 0px 3px 10px 0px rgba($color: #000000, $alpha: 0.15);
+  }
+}
+
+.name {
+  width: 100%;
+
+  &__full {
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: $fontsize_main;
+  }
+
+  &__handle {
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: $fontsize_sub;
+  }
+}
+
+.sns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 18px;
+  width: $width_button * 2 + 10px;
+}
+
+.button {
+  &_github {
+    background-color: $github;
+
+    @include button;
+  }
+
+  &_twitter {
+    background-color: $twitter;
+
+    @include button;
+  }
 }

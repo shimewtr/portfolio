@@ -3,7 +3,15 @@ doctype html
 html(lang="ja")
   include _head
   body
-    include _header
-    .content
-      .main
-    include _footer
+    .main
+      .profile
+        .icon
+          img.icon__image(src="img/icon.png", alt="プロフィール画像")
+        .name
+          .name__full Wataru Shime
+          .name__handle @wawawatataru
+        .sns
+          a(href="https://github.com/wawawatataru" target="blank")
+            include button/_github
+          a(href="https://twitter.com/wawawatataru" target="blank")
+            include button/_twitter

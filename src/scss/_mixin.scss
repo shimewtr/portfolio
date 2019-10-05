@@ -1,0 +1,21 @@
+@mixin container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+@mixin button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: $width_button;
+    height: $height_button;
+    border-radius: $width_button / 2;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
