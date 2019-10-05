@@ -1,0 +1,22 @@
+@import 'compass';
+@import 'color';
+@import 'header';
+@import 'footer';
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+* {
+  color: $standard_text;
+  font-family: 'Lato', 'Noto Sans Japanese';
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: $body_color;
+}
