@@ -1,0 +1,86 @@
+@import 'color';
+@import 'mixin';
+@import 'size';
+
+.work {
+  @include container;
+
+  &__image {
+    @include image_base;
+  }
+}
+
+.description {
+  width: $width_main;
+
+  &__title {
+    @include text_main;
+  }
+
+  &__text {
+    @include text_sub;
+  }
+}
+
+.link {
+  margin-top: 18px;
+
+  @include button_container;
+}
+
+.skill {
+  margin-top: 120px;
+
+  @include container;
+
+  &__title {
+    @include text_main;
+  }
+
+  &__svgs {
+    margin-top: 24px;
+
+    @include button_container;
+  }
+
+  &__svg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+  }
+}
+
+.image {
+  margin-top: 120px;
+
+  @include container;
+
+  &__title {
+    @include text_main;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: $width_portfolio__items;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+
+    @include image_base;
+  }
+
+  &__image {
+    width: $width_portfolio__item;
+
+    object-fit: contain;
+  }
+}
