@@ -1,5 +1,5 @@
 doctype html
-- var title = "Portfolio | top";
+- var title = "top";
 html(lang="ja")
   include _head
   body
@@ -8,10 +8,17 @@ html(lang="ja")
         .icon
           img.icon__image(src="img/icon.png", alt="プロフィール画像")
         .name
-          .name__full Wataru Shime
-          .name__handle @wawawatataru
+          h1.name__full Wataru Shime
+          h2.name__handle @wawawatataru
         .sns
           a(href="https://github.com/wawawatataru" target="blank")
             include button/_github
           a(href="https://twitter.com/wawawatataru" target="blank")
             include button/_twitter
+      .portfolio
+        h2.portfolio__title Portfolio
+        .portfolio__items
+          include portfolio_item/_portfolio_item__work1
+          include portfolio_item/_portfolio_item__work1
+          include portfolio_item/_portfolio_item__work1
+      include _footer

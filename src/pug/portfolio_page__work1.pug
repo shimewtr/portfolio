@@ -1,0 +1,17 @@
+doctype html
+- var title = "worl1";
+html(lang="ja")
+  include _head
+  body
+    .main
+      include portfolio_item/_portfolio_item__work1
+      .profile
+        .icon
+          img.icon__image(src="img/icon.png", alt="プロフィール画像")
+        .name
+          h1.name__full Wataru Shime
+          h2.name__handle @wawawatataruff
+      .portfolio
+        h2.portfolio__title Portfolio
+        .portfolio__items
+      include _footer

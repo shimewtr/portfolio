@@ -3,14 +3,14 @@ var plumber = require('gulp-plumber');
 var compass = require('gulp-compass');
 var cssmin = require('gulp-cssmin');
 var pug = require('gulp-pug');
-// var browserSync = require('browser-sync');
 var browserSync = require('browser-sync').create();
 
 gulp.task('pug', function (done) {
   gulp.src(['./src/pug/*.pug', '!./src/pug/_*.pug'])
     .pipe(plumber())
     .pipe(pug({
-      pretty: true
+      pretty: true,
+      basedir: './src/pug'
     }))
     .pipe(gulp.dest('./html'));
   done();
@@ -51,7 +51,6 @@ gulp.task('watch-files', function (done) {
   gulp.watch("src/scss/*.scss", gulp.task('compass'));
   gulp.watch("html/css/*.css", gulp.task('browser-reload'));
   gulp.watch("html/*.html", gulp.task('browser-reload'));
-  // gulp.watch("html/css/*.css", gulp.task('cssmin'));
   done();
 });
 
