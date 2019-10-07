@@ -30,12 +30,6 @@ gulp.task('compass', function (done) {
   done();
 });
 
-gulp.task('cssmin', function (done) {
-  gulp.src('html/css/*.css')
-    .pipe(cssmin())
-    .pipe(gulp.dest('html/css'));
-});
-
 gulp.task('build-server', function (done) {
   browserSync.init({
     server: {
