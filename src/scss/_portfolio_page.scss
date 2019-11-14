@@ -6,6 +6,8 @@
   @include container;
 
   &__image {
+    margin-bottom: 36px;
+
     @include image_base;
   }
 }
@@ -29,7 +31,7 @@
 }
 
 .skill {
-  margin-top: 120px;
+  padding-top: 100px;
 
   @include container;
 
@@ -38,7 +40,7 @@
   }
 
   &__svgs {
-    margin-top: 24px;
+    margin-top: 10px;
 
     @include button_container;
   }
@@ -52,8 +54,8 @@
   }
 }
 
-.image {
-  margin-top: 120px;
+.about {
+  margin-top: 100px;
 
   @include container;
 
@@ -61,26 +63,12 @@
     @include text_main;
   }
 
-  &__items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 40px;
-    width: $width_portfolio__items;
+  &__sub-title {
+    @include text_about_sub_title;
   }
 
-  &__item {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 24px;
+  &__text {
+    @include text_about_text;
 
-    @include image_base;
-  }
-
-  &__image {
-    width: $width_portfolio__item;
-
-    object-fit: contain;
   }
 }

@@ -2,4 +2,4 @@
   img.work__image(src=`${image_path}`, alt=`${image_alt}`)
 .description
   p.description__title #{title}
-  p.description__text #{description}
+  p.description__text !{description.replace(/\r?\n|\r/g,"<br>")}

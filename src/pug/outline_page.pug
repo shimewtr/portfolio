@@ -1,0 +1,36 @@
+doctype html
+- var title = "OUTLINE Watch Face";
+- var image_path = "img/portfolio/outline.png";
+- var image_alt = "AnoPostの画像";
+- var description = "文字盤上で予定を瞬時に確認できるウォッチフェイス";
+
+html(lang="ja")
+  include _head
+  body
+    .main
+      include portfolio_page/_portfolio_header
+      .link
+        a(href="https://play.google.com/store/apps/details?id=atsushime.com.outline" target="blank")
+          include svg/_playstore
+      .skill
+        h1.skill__title 主な使用技術（担当箇所）
+        .skill__svgs
+          .skill__svg
+            include svg/_xd
+      .about
+        h2.about__title OUTLINE Watch Face
+        p.about__text
+          | 文字盤上で予定を瞬時に確認できるウォッチフェイスです。
+        h3.about__sub-title 作成理由
+        p.about__text
+          | 混雑した電車内や歩行中などスマホを開くのが困難な状況でも予定を確認できるようにするため
+        h3.about__sub-title 特徴
+        p.about__text
+          | OUTLINEは文字盤上で時刻と予定が確認できます。
+          br
+          | アナログ表示された文字盤と帯状に表示された予定から瞬時に予定までの時間を認識できます。
+          br
+          | 予定の時間や帯の色はGoogle Calendarに設定されたものと同期しているため、
+          br
+          | 普段通り予定を追加するだけで手元でも予定を認識可能にしています。
+      include _footer
