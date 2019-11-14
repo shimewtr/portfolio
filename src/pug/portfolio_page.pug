@@ -2,7 +2,7 @@ doctype html
 - var title = "Portfolio";
 - var image_path = "img/portfolio/portfolio.png";
 - var image_alt = "Portfolioの画像";
-- var description = "自身の作成物をまとめたページ。";
+- var description = "自身の作成物をまとめたページ（このページ）";
 
 html(lang="ja")
   include _head
@@ -10,10 +10,8 @@ html(lang="ja")
     .main
       include portfolio_page/_portfolio_header
       .link
-        a(href="https://github.com/wawawatataru/anopost" target="blank")
+        a(href="https://github.com/wawawatataru/portfolio" target="blank")
           include button/_github
-        a(href="https://anopost.xyz/" target="blank")
-          include button/_link
       .skill
         h1.skill__title 主な使用技術
         .skill__svgs
@@ -31,12 +29,12 @@ html(lang="ja")
           | 自身の作成物をまとめたページ（このページ）です。
         h3.about__sub-title 作成理由
         p.about__text
-          | 作成物を一覧で閲覧できるようにするため。
+          | 作成物を一覧で閲覧できるようにするため、
           br
-          | gulpを用いてタスクランナーを実行し、静的サイトの開発環境構築に興味があったため。
+          | また、gulpを用いてタスクランナーを実行し、静的サイトの開発環境構築に興味があったため。
         h3.about__sub-title 特徴
         p.about__text
-          | gulpのタスクでpugファイル、scssファイルを編集すると、
+          | pugファイル、scssファイルを編集すると、
           br
           | 自動でhtml、cssを生成し、ブラウザがリロードされるため、すぐさま変更箇所を確認することができます。
       include _footer

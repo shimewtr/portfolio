@@ -1,7 +1,7 @@
 doctype html
 - var title = "AtCoder OGP";
 - var image_path = "img/portfolio/atcoder_ogp.png";
-- var image_alt = "AnoPostの画像";
+- var image_alt = "AtCoder OGPの画像";
 - var description = "GitHub ActionsとGitHub Pagesを用いたOGP自動更新ツール";
 
 html(lang="ja")
@@ -10,10 +10,8 @@ html(lang="ja")
     .main
       include portfolio_page/_portfolio_header
       .link
-        a(href="https://github.com/wawawatataru/anopost" target="blank")
+        a(href="https://github.com/wawawatataru/atcoder_ogp" target="blank")
           include button/_github
-        a(href="https://anopost.xyz/" target="blank")
-          include button/_link
       .skill
         h1.skill__title 主な使用技術
         .skill__svgs
@@ -28,28 +26,26 @@ html(lang="ja")
       .about
         h2.about__title AtCoder OGP
         p.about__text
-          | TwitterのOGPに自動で更新されるAtCoderのレーティングを表示できるツールです。
+          | GitHub ActionsとGitHub Pagesを用いたOGP自動更新ツール
         h3.about__sub-title 作成理由
         p.about__text
-          | OGPと固定ツイートを利用して、Twitterで表現できることを拡張できないかと考えたことと、
+          | OGPとTwitterの固定ツイートを利用して、表現できる情報を拡張できないかと考えたことと、
           br
-          | 少し前に始めたAtCoderで界隈のユーザーをフォローしているとレーティング画像を毎回撮影して、
+          | AtCoderユーザーの多くがレーティング画像を毎回撮影して、ツイートしていることがわかり、
           br
-          | ツイートするユーザーが多く見られた。
+          | レーティングの画像を自動で撮影し手間を省くのと同時に、
           br
-          | レーティングの画像を自動で撮影し、OGPを更新すれば手間を省けるのと同時に、
-          br
-          | 固定ツイートとOGPを活用した新しい情報領域を生成できると考えたため。
+          | 固定ツイートとOGPを活用した新しい情報領域を生成できると考え作成しました。
         h3.about__sub-title 特徴
         p.about__text
           | AtCoder OGPはGitHub Pages、GitHub Actions、Dockerなどを利用して作成されています。
           br
-          | そのため、互換性やユーザーの開発環境などを考慮せず、同一の処理が行えます。
+          | 互換性やユーザーの開発環境などを考慮せず、同一の処理が行えます。
           br
           br
-          | 利用者は関連技術の知識がなくても、自身のアカウント名に修正するだけで、
+          | 利用者は関連技術の知識がなくても、自身のアカウント名をコードに記載するだけで、
           br
-          | 自身のアカウントのレーティング画像がOGPに設定されている
+          | 自身のレーティング画像がOGPに設定されているGitHub Pagesを作成できます。
           br
-          | GitHub Pagesが作成されるので、URLをツイートするだけでレーティングを共有することができます。
+          | GitHub PagesのURLをツイートするだけで自動で更新されるレーティングを共有することができます。
       include _footer

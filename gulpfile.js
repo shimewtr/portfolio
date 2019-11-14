@@ -12,7 +12,7 @@ gulp.task('pug', function (done) {
       pretty: true,
       basedir: './src/pug'
     }))
-    .pipe(gulp.dest('./html'));
+    .pipe(gulp.dest('./docs'));
   done();
 });
 
@@ -22,18 +22,18 @@ gulp.task('compass', function (done) {
     .pipe(compass({
       config_file: 'config.rb',
       comments: false,
-      css: 'html/css',
+      css: 'docs/css',
       sass: 'src/scss/'
     }))
     .pipe(cssmin())
-    .pipe(gulp.dest('html/css'));
+    .pipe(gulp.dest('docs/css'));
   done();
 });
 
 gulp.task('build-server', function (done) {
   browserSync.init({
     server: {
-      baseDir: "./html",
+      baseDir: "./docs",
       index: "index.html"
     }
   });
@@ -43,8 +43,8 @@ gulp.task('build-server', function (done) {
 gulp.task('watch-files', function (done) {
   gulp.watch("src/pug/*.pug", gulp.task('pug'));
   gulp.watch("src/scss/*.scss", gulp.task('compass'));
-  gulp.watch("html/css/*.css", gulp.task('browser-reload'));
-  gulp.watch("html/*.html", gulp.task('browser-reload'));
+  gulp.watch("docs/css/*.css", gulp.task('browser-reload'));
+  gulp.watch("docs/*.docs", gulp.task('browser-reload'));
   done();
 });
 
