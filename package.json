@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-cssmin": "^0.2.0",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-pug": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wawawatataru/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wawawatataru/portfolio/issues"
+  },
+  "homepage": "https://github.com/wawawatataru/portfolio#readme"
+}
