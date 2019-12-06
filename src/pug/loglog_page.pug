@@ -1,0 +1,57 @@
+doctype html
+- var title = "LogLog";
+- var image_path = "img/portfolio/loglog.png";
+- var image_alt = "LogLogの画像";
+- var description = "日常のちょっとしたできごとを記録できるWebサービス";
+
+html(lang="ja")
+  include _head
+  body
+    .main
+      include portfolio_page/_portfolio_header
+      .link
+        a(href="https://github.com/wawawatataru/loglog" target="blank")
+          include button/_github
+        a(href="https://www.loglog.me/" target="blank")
+          include button/_link
+      .skill
+        h1.skill__title 主な使用技術
+        .skill__svgs
+          .skill__svg
+            include svg/_ruby
+          .skill__svg
+            include svg/_rails
+          .skill__svg
+            include svg/_rubocop
+          .skill__svg
+            include svg/_heroku
+          .skill__svg
+            include svg/_octcat
+          .skill__svg
+            include svg/_circleci
+      .about
+        h2.about__title LogLogとは
+        p.about__text
+          | 日常のちょっとしたできごとを記録できるWebサービス
+        h3.about__sub-title 作成理由
+        p.about__text
+          | 買った漫画の冊数や体重の変化など<span class="about__text--bold">日常生活のちょっとしたできごと</span>を記録したかったため作成しました。
+          br
+          | また、記録していることからその人のパーソナルな部分がわかるので、
+          br
+          | 記録しているものを通じて新しいコミュニケーションができるのではと考えています。
+        h3.about__sub-title 特徴
+        p.about__text
+          | LogLogでは<span class="about__text--bold">グラフの種類や色を選択するだけですぐに</span>ログが作れ、
+          br
+          | 日にちと値を入力するだけで記録として残すことができます。
+          img.about__image(src="img/portfolio/loglog/log_edit.png", alt="LogLogのグラフ作成の画像")
+          br
+          img.about__image(src="img/portfolio/loglog/log_show.png", alt="LogLogのグラフの画像")
+          br
+          | 気になったユーザーやログをフォローすることで<span class="about__text--bold">最新情報を知る</span>ことができます。
+          br
+          img.about__image(src="img/portfolio/loglog/feeds.png", alt="LogLogのフィードの画像")
+          br
+          | ログを検索することもで、<span class="about__text--bold">共通の趣向を持った人を探す</span>ことができます。
+          img.about__image(src="img/portfolio/loglog/search.png", alt="LogLogの検索の画像")
