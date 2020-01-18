@@ -81,6 +81,12 @@ body {
 
     @include button;
   }
+
+  &_ruby_gem {
+    background-color: $ruby_gem;
+
+    @include button;
+  }
 }
 
 .portfolio {
