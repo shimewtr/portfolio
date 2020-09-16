@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wawawatataru/portfolio.git"
+    "url": "git+https://github.com/shimewtr/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wawawatataru/portfolio/issues"
+    "url": "https://github.com/shimewtr/portfolio/issues"
   },
-  "homepage": "https://github.com/wawawatataru/portfolio#readme"
+  "homepage": "https://github.com/shimewtr/portfolio#readme"
 }
