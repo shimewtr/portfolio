@@ -1,0 +1,51 @@
+doctype html
+- var title = "Comica";
+- var image_path = "img/portfolio/comica.png";
+- var image_alt = "Comicaの画像";
+- var description = "漫画発売日通知アプリ";
+
+html(lang="ja")
+  include _head
+  body
+    .main
+      include portfolio_page/_portfolio_header
+      .link
+        a(href="https://play.google.com/store/apps/details?id=com.com.comica" target="blank")
+          include svg/_playstore
+      .skill
+        h1.skill__title 主な使用技術
+        .skill__svgs
+          .skill__svg
+            include svg/_react
+          .skill__svg
+            include svg/_ruby
+          .skill__svg
+            include svg/_rails
+      .about
+        h2.about__title Comicaとは
+        p.about__text
+          | 自分の好きな漫画の新刊情報や発売日の情報が通知で届く、漫画発売日通知アプリ
+        h3.about__sub-title 特徴
+        p.about__text
+          | <span class="about__text--bold">漫画登録</span>
+          br
+          | 発売日を通知したい漫画を登録できます。
+          br
+          | 話題の新作やヒット漫画まで数多くのタイトルを網羅しているため好きな漫画を登録できます。
+          br
+          | 登録した漫画の新刊情報は一覧で確認できます。
+          br
+          br
+          | <span class="about__text--bold">販売日通知</span>
+          br
+          | 漫画の発売日当日に通知でお知らせされます。
+          br
+          | お気に入りの漫画を買い逃す心配はありません。
+          br
+          | 自分のライフスタイルに合わせて通知時間を変更することもできます。
+          br
+          br
+          | <span class="about__text--bold">漫画購入</span>
+          br
+          | 新刊が発売された漫画や、気になる漫画は購入リンクからすぐに購入できます。
+      include _footer
